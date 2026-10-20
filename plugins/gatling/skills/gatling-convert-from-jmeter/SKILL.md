@@ -9,6 +9,13 @@ user-invocable: true
 
 ## Instructions
 
+### Step 0: Large test plans
+
+For any `.jmx` over roughly 30 KB, use the `/gatling:gatling-jmx-nav` skill first to explore and
+export the plan instead of reading the raw XML directly. Convert from its `export` output
+(`outline.txt`, `units/`, `props.tsv`, `vars.txt`) one unit at a time, then continue with Step 1
+below using that output in place of the raw file. Small plans can skip straight to Step 1.
+
 ### Step 1: Find input JMeter test plan
 
 - Search for files with `.jmx` extension
